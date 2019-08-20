@@ -4,8 +4,9 @@ require_relative '../lib/turn.rb'
 board = [" "," "," "," "," "," "," "," "," "]
 turn()
 number = gets.strip
+idex = input_to_index(number)
 if valid_move? == true
-  move(board, number)
+  move(board, idex)
   display_board(board)
 else
   turn()
