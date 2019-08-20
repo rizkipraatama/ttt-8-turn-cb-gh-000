@@ -2,7 +2,10 @@
 
 require_relative '../lib/turn.rb'
 board = [" "," "," "," "," "," "," "," "," "]
-puts "Please enter 1-9:"
+turn()
 number = gets.strip
 if valid_move? == true
-  display_board()
+  move(board, number)
+  display_board(board)
+else
+  
