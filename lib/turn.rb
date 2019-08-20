@@ -19,8 +19,7 @@ def valid_move?(board, index)
 end
 
 
-def position_taken?(board, input)
-  index = move(input);
+def position_taken?(board, index)
   if board[index] == " "
     return false
   elsif board[index] == ""
