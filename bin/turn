@@ -8,3 +8,4 @@ if valid_move? == true
   move(board, number)
   display_board(board)
 else
+  turn()
