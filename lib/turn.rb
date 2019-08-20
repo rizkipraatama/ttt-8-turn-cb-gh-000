@@ -20,6 +20,7 @@ end
 
 
 def position_taken?(board, input)
+  index = move(input);
   if board[index] == " "
     return false
   elsif board[index] == ""
