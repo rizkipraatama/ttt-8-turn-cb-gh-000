@@ -33,9 +33,13 @@ def position_taken?(board, input)
   end
 end
 
-def move(board, input, value="X")
-  index= input - 1
+def move(board, index, value="X")
   board[index] = value
+end
+
+def input_to_index(input)
+  newint = input.to_i
+  return newint - 1
 end
 
 def turn
