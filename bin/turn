@@ -5,7 +5,7 @@ board = [" "," "," "," "," "," "," "," "," "]
 turn()
 number = gets.strip
 idex = input_to_index(number)
-if valid_move? == true
+if valid_move?(board,index) == true
   move(board, idex)
   display_board(board)
 else
