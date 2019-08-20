@@ -7,7 +7,8 @@ def display_board(board)
 end
 
 def valid_move?(board, input)
-  if input > 8 || input < 0
+  index = move(input);
+  if index > 8 || index < 0
     return false
   elsif position_taken?(board, input) == true
     return false
