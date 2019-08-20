@@ -9,9 +9,9 @@ end
 def valid_move?(board, index)
   if index > 8 || index < 0
     return false
-  elsif position_taken?(board, input) == true
+  elsif position_taken?(board, index) == true
     return false
-  elsif position_taken?(board, input) == false
+  elsif position_taken?(board, index) == false
     return true
   else
     return true
